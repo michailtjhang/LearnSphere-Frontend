@@ -1,10 +1,13 @@
 import React from 'react'
 import Layout from '../common/Layout'
+import Hero from '../common/Hero'
+import FeaturedCategories from '../common/FeaturedCategories'
 
 const Home = () => {
   return (
     <Layout>
-      <h1>Welcome to the Home Page</h1>
+      <Hero />
+      <FeaturedCategories />
     </Layout>
   )
 }
