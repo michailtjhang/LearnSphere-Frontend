@@ -8,7 +8,7 @@ const Footer = () => {
 
           <div className='col-lg-3 col-12'>
             <div className='col-lg-12 col-md-6 col-12 pe-lg-5'>
-              <h2>LMS</h2>
+              <h2>Learn Sphere</h2>
               <p>Join our Learning Management System and explore a wide range of courses to enhance your skills and achieve your goals.</p>
             </div>
           </div>
