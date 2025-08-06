@@ -72,7 +72,7 @@ const CreateCourse = () => {
                                                 }
                                             </div>
 
-                                            <button type='submit' className='btn btn-primary'>Continue</button>
+                                            <button type='submit' className='btn btn-primary'>Update</button>
                                         </div>
                                     </div>
                                 </form>
