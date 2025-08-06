@@ -64,7 +64,7 @@ const Login = () => {
                       })
                       }
                       type="text"
-                      className='form-control'
+                      className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                       placeholder='Email' />
                     {
                       errors.email && <span className='text-danger'>{errors.email.message}</span>
@@ -84,7 +84,7 @@ const Login = () => {
                       })
                       }
                       type="password"
-                      className='form-control'
+                      className={`form-control ${errors.password ? 'is-invalid' : ''}`}
                       placeholder='Password' />
                     {
                       errors.password && <span className='text-danger'>{errors.password.message}</span>

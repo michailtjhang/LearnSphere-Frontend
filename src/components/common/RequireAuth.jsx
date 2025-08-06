@@ -1,13 +1,15 @@
 import React, { useContext } from 'react'
-import { AuthContext } from '../context/Auth';
-import { Navigate } from 'react-router-dom';
+import { AuthContext } from '../context/Auth'
+import { Navigate, Outlet } from 'react-router-dom'
 
 export const RequireAuth = ({ children }) => {
     const { user } = useContext(AuthContext)
 
     if (!user) {
-        return <Navigate to={'/account/login'} />
+        return <Navigate to="/account/login" />
     }
 
-    return children;
+    // Jika ada children (cara lama), gunakan children
+    // Jika tidak ada children (nested routes), gunakan Outlet
+    return children || <Outlet />
 }

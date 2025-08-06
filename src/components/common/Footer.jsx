@@ -28,10 +28,10 @@ const Footer = () => {
           <div className='col-lg-3 col-md-6 col-12'>
             <h2>Quick Links</h2>
             <ul>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Register</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Courses</a></li>
+              <li><a href="/account/login">Login</a></li>
+              <li><a href="/account/register">Register</a></li>
+              <li><a href="/account/dashboard">My Account</a></li>
+              <li><a href="/account/my-courses">Courses</a></li>
             </ul>
           </div>
 

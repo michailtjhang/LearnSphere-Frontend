@@ -10,7 +10,7 @@ const Dashboard = () => {
               <div className='container pb-5 pt-3'>
                   <nav aria-label="breadcrumb">
                       <ol className="breadcrumb">
-                          <li className="breadcrumb-item"><Link to="/account">Account</Link></li>
+                          <li className="breadcrumb-item"><Link to="/account/dashboard">Account</Link></li>
                           <li className="breadcrumb-item active" aria-current="page">Dashboard</li>
                       </ol>
                   </nav>
