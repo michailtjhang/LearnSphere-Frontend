@@ -5,6 +5,8 @@ import UserSidebar from '../../../common/UserSidebar'
 import { apiUrl, token } from '../../../common/Config'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import ManageOutcome from './ManageOutcome'
+import ManageRequirement from './ManageRequirement'
 
 const EditCourse = () => {
 
@@ -41,7 +43,7 @@ const EditCourse = () => {
                 })
         }
     });
-    
+
     const [categories, setCategories] = useState([]);
     const [levels, setLevels] = useState([]);
     const [languages, setLanguages] = useState([]);
@@ -261,9 +263,9 @@ const EditCourse = () => {
                                                     }
                                                 </div>
 
-                                                <button 
-                                                disabled={loading}
-                                                className='btn btn-primary'>
+                                                <button
+                                                    disabled={loading}
+                                                    className='btn btn-primary'>
                                                     {loading == false ? 'Update' : 'please wait...'}
                                                 </button>
                                             </div>
@@ -272,7 +274,8 @@ const EditCourse = () => {
                                 </div>
 
                                 <div className='col-md-5'>
-
+                                    <ManageOutcome />
+                                    <ManageRequirement />
                                 </div>
 
                             </div>
